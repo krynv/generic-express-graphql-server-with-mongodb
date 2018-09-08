@@ -1,0 +1,12 @@
+type MyCustomModel {
+    _id: String!
+    name: String!
+}
+
+type Query {
+    allModels: [Item!]!
+}
+
+type Mutation {
+    createCustomModel(name: String!): Item!
+}
